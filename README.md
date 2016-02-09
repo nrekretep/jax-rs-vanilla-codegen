@@ -9,5 +9,9 @@ The goals of this code generator are
 
 The inital code is based on the jaxrs-cfx code generator from the swagger-codegen project.
 
-Changes:
+# Changes
 * change of the method naming convention from "ressourceGet" to "getRessource" in case no operationId is provided in swagger specification
+
+# Usage
+``` java -cp jaxrs-vanilla-server-codegen-1.0.0.jar;swagger-codegen-cli.jar io.swagger.codegen.SwaggerCodegen  generate -i swagger.yml -l jaxrs-vanilla -o src\main
+```
